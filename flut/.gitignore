@@ -1,0 +1,25 @@
+# Flutter
+.build/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+generated_plugin_registrant.dart
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+
+# iOS
+ios/Pods/
+ios/Runner/GeneratedPluginRegistrant.*
+ios/build/
+
+# VS Code
+.vscode/
+
+# Other
+*.apk
+*.ipa
