@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import 'routes/app_routes.dart';
+import 'features/approval/controllers/approval_controllers.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => ApprovalController(),
+        ),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {

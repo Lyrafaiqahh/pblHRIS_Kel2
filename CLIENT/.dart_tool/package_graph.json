@@ -12,7 +12,9 @@
         "flutter",
         "go_router",
         "http",
-        "intl"
+        "intl",
+        "provider",
+        "uuid"
       ],
       "devDependencies": [
         "flutter_lints",
@@ -48,6 +50,22 @@
       "name": "cupertino_icons",
       "version": "1.0.8",
       "dependencies": []
+    },
+    {
+      "name": "uuid",
+      "version": "3.0.7",
+      "dependencies": [
+        "crypto"
+      ]
+    },
+    {
+      "name": "provider",
+      "version": "6.1.5+1",
+      "dependencies": [
+        "collection",
+        "flutter",
+        "nested"
+      ]
     },
     {
       "name": "intl",
@@ -191,6 +209,20 @@
         "stream_channel",
         "string_scanner",
         "term_glyph"
+      ]
+    },
+    {
+      "name": "crypto",
+      "version": "3.0.7",
+      "dependencies": [
+        "typed_data"
+      ]
+    },
+    {
+      "name": "nested",
+      "version": "1.0.0",
+      "dependencies": [
+        "flutter"
       ]
     },
     {

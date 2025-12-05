@@ -4,6 +4,10 @@ import '../features/letter/screens/letter_list_screen.dart';
 import '../features/letter/screens/letter_create_screen.dart';
 import '../features/letter/screens/letter_detail_screen.dart';
 
+// IMPORT APPROVAL
+import '../features/approval/screens/approval_list_screen.dart';
+import '../features/approval/screens/approval_detail_screen.dart';
+
 final appRouter = GoRouter(
   initialLocation: '/',
   routes: [
@@ -29,5 +33,25 @@ final appRouter = GoRouter(
         return LetterDetailScreen(id: id);
       },
     ),
+
+
+
+
+ // LIST APPROVAL (Admin melihat semua pengajuan)
+    GoRoute(
+      path: '/approval',
+      builder: (context, state) => const ApprovalListScreen(),
+    ),
+
+    // DETAIL APPROVAL (Admin membuka salah satu pengajuan)
+    GoRoute(
+      path: '/approval/:id',
+      builder: (context, state) {
+        final id = state.pathParameters['id']!;
+        return ApprovalDetailScreen(id: id);
+      },
+    ),
+
+
   ],
 );

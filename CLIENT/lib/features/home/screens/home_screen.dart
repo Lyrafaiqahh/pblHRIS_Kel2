@@ -52,6 +52,24 @@ class HomeScreen extends StatelessWidget {
                   textStyle: const TextStyle(fontSize: 16),
                 ),
               ),
+
+
+  const SizedBox(height: 20),
+
+              // ⭐ TOMBOL APPROVAL SURAT (ADMIN)
+              ElevatedButton.icon(
+                onPressed: () => context.push('/approval'),
+                icon: const Icon(Icons.verified),
+                label: const Text('Approval Surat'),
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 30,
+                    vertical: 15,
+                  ),
+                  backgroundColor: Colors.green,
+                  textStyle: const TextStyle(fontSize: 16),
+                ),
+              ),
             ],
           ),
         ),
